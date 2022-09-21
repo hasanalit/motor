@@ -1,9 +1,12 @@
 import styled from "styled-components";
 import Car from '../Assets/Images/car.png'
+import { NavLink }from 'react-router-dom';
+
 
 function Chevrolet() {
     return (
       <Wrapper>
+        <NavLink className='list-car' to='/PageComponent/list1'>
         <ul className="list">
           <li className="item">
             <img className="list-img" src={Car} alt="car-img" />
@@ -11,6 +14,7 @@ function Chevrolet() {
             <p className="list-text">Narxi: 329 900 000 </p>
           </li>
         </ul>
+        </NavLink>
       </Wrapper>
     );
   }
@@ -60,5 +64,9 @@ function Chevrolet() {
   line-height: 32px;
   color: rgba(0, 0, 0, 0.8);
   font-style: normal;
+}
+
+.list-car {
+  text-decoration: none;
 }
   `

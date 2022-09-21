@@ -1,15 +1,18 @@
 import styled from "styled-components";
 import UsersImg from '../Assets/Images/user.png'
 import RightIcon from '../Assets/Images/right.png'
+import { NavLink } from 'react-router-dom'
 
 
 function Home() {
     return (
       <Wrapper>
+        <NavLink className='navlink' to="/Pages/Admin">
         <button className="home-btn">
             <img className="user-img" src={UsersImg} alt="User-img" />
             <p className="user-name-btn">Admin o‘tish</p>
         </button>
+        </NavLink>
         <div className="home-section">
         <p className="home__text">Bosh sahifa</p>
         <img src={RightIcon} alt="Right-icon" />
@@ -73,5 +76,9 @@ function Home() {
         line-height: 63px;
         color: #000000;
         font-style: normal;
+    }
+
+    .navlink {
+      text-decoration: none;
     }
   `
