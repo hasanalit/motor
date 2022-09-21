@@ -2,6 +2,7 @@ import styled from "styled-components";
 import UsersImg from '../Assets/Images/user.png'
 import RightIcon from '../Assets/Images/right.png'
 import { NavLink } from 'react-router-dom'
+// import Admin from './Pages/Admin';
 
 
 function Home() {
@@ -26,7 +27,7 @@ function Home() {
   export default Home;
 
   const Wrapper = styled.div`
-    padding: 40px 90px;
+    padding: 40px 90px 0px;
 
 
     .home-btn {

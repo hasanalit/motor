@@ -26,6 +26,7 @@ function App() {
             <Route path="/Pages/Admin" element={<Admin/>} />
       </Routes>
 
+
     </Wrapper>
   );
 }
